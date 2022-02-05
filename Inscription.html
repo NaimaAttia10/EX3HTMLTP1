@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+</head>
+<body  style="text-align: center;">
+    <h1><div align="center">Inscription en Licence</div></h1>
+    <form action="pass.html" method="post" name="Info Perso">
+    <fieldset>
+    <legend align="center">Informations personnelles </legend>
+        Votre nom : <input type="text" name="votre nom?" > <br>
+		Votre prénom : <input type="text" name="votre Prénom?" > <br>
+		Votre age : <input type="number" name="votre age?" > <br>
+		Votre adresse : <textarea Name="Votre adresse?" rows="15" cols="30" > </textarea> <br>
+		Votre adresse e-mail : <input type="email" name="mail" > <br>
+		Votre site web : <input type="url" name="web" > <br>
+        Votre date de naissance : <input type="date" name="datenaissance" > <br>
+        Mot de passe : <input type="password" name="Mot de passe" required > <br>
+		Retaper votre mot de passe : <input type="password" name="Mot de passe" required > <br>
+        <input type="text" id="zone" name="ZoneVide" 
+           pattern="[I]-[N]-[S]-[A]-[T]-[0,9]-{4}" >
+</fieldset>
+    <fieldset>
+            <legend align="center"> Gestion des groupes et des options </legend>
+        Votre groupe : 
+        <div>
+            <input type="radio" id="Groupe1" name="" value="Groupe1"
+                   checked>
+            <label for="Groupe1">Groupe1</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="Groupe2" name="" value="Groupe2">
+            <label for="Groupe2">Groupe2</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="Groupe3" name="" value="Groupe3">
+            <label for="Groupe3">Groupe3</label>
+          </div>
+		Numéro de carte d'étudiant : <input type="number" name="Numéro de carte d'étudiant" > <br>
+		Choisissez les options que vous désirez :
+        <select name="options">
+            <option value="">J2ee</option>
+			<option value="">Android</option>
+			<option value="">.Net</option>
+			<option value="">HTML5</option>
+			<option value="">Flex</option>
+		</select>
+        <br>
+    </div>
+ 
+		</fieldset>
+        <input type="submit" value="Valider">
+	    <input type="reset" value="Réinitialiser">
+    </form>
+
+</body>
+</html>
